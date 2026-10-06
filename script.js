@@ -2,7 +2,7 @@
 // Número de WhatsApp da oficina (só dígitos, com 55 + DDD). Ex.: "5547999998888".
 // Enquanto estiver vazio, os botões de WhatsApp ligam para o telefone fixo.
 const WHATSAPP = "";
-const TELEFONE = "+554734251193";
+const TELEFONE = "+5547991696393";
 
 // ===== Links de WhatsApp =====
 function whatsUrl(msg) {
@@ -67,7 +67,7 @@ checker.addEventListener("submit", (e) => {
     window.open(whatsUrl(msg), "_blank", "noopener");
     hint.textContent = "Abrimos o WhatsApp com a sua mensagem pronta.";
   } else {
-    hint.textContent = "Ligue para (47) 3425-1193 e conte: " + sintomas.join(", ").toLowerCase() + ".";
+    hint.textContent = "Ligue para (47) 99169-6393 e conte: " + sintomas.join(", ").toLowerCase() + ".";
     window.location.href = `tel:${TELEFONE}`;
   }
 });
