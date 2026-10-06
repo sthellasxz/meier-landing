@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Meier Mecânica Automotiva | Câmbio automático em Joinville</title>
   <meta name="description" content="Câmbio automático com tranco ou luz no painel? A Meier, no Bom Retiro em Joinville, faz diagnóstico com scanner e mecânica completa para importados, nacionais e antigos. WhatsApp (47) 99169-6393.">
-  <meta name="theme-color" content="#e4e7ea">
+  <meta name="theme-color" content="#141518">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:wght@400;500;600&family=Alex+Brush&display=swap" rel="stylesheet">
@@ -58,23 +58,35 @@
 
     <!-- Hero: seletor de marchas -->
     <section class="hero">
-      <div class="wrap">
-        <div class="selector" role="img" aria-label="Seletor do câmbio automático na posição D">
-          <span>P</span><span>R</span><span>N</span><span class="selector__d">D</span>
-        </div>
-
-        <div class="hero__body">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow">Bom Retiro · Joinville/SC</p>
           <h1>Câmbio automático dando sinal? Traga para quem entende.</h1>
-          <div class="hero__side">
-            <p class="hero__lead">Tranco na troca de marcha, demora para engatar, luz acesa no painel. A Meier usa scanner e avaliação técnica para achar a causa certa em importados, nacionais e antigos.</p>
-            <div class="ctas">
-              <a href="#cambio" class="btn btn--red" data-track="sintomas_hero">Marcar os sintomas</a>
-              <a href="#" class="btn btn--ghost js-whats" data-msg="Olá! Vim pelo site e gostaria de um orçamento." data-track="whats_hero"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>WhatsApp (47) 99169-6393</a>
-            </div>
+          <p class="hero__lead">Tranco na troca de marcha, demora para engatar, luz acesa no painel. A Meier usa scanner e avaliação técnica para achar a causa certa em importados, nacionais e antigos.</p>
+          <div class="ctas">
+            <a href="#" class="btn btn--red js-whats" data-msg="Olá! Vim pelo site e gostaria de um orçamento." data-track="whats_hero"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>WhatsApp (47) 99169-6393</a>
+            <a href="#cambio" class="btn btn--outline" data-track="sintomas_hero">Marcar os sintomas</a>
           </div>
         </div>
 
-        <p class="hero__brands">Importados, nacionais e antigos. Atendemos Chevrolet, Volkswagen, BMW, Land Rover, Audi, Toyota, Citroën, Suzuki, Fiat e Alfa Romeo, com scanner nacional e importado.</p>
+        <div class="console">
+          <div class="selector" role="img" aria-label="Seletor do câmbio automático na posição D">
+            <span>P</span><span>R</span><span>N</span><span class="selector__d">D</span>
+          </div>
+          <p class="console__caption">Diagnóstico com scanner nacional e importado</p>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="brands">
+          <div class="brands__head">
+            <h2 class="brands__title" id="marcas">Marcas que atendemos</h2>
+            <p>Importados, nacionais e antigos</p>
+          </div>
+          <ul class="brands__list" aria-labelledby="marcas">
+          <li>Chevrolet</li><li>Volkswagen</li><li>BMW</li><li>Land Rover</li><li>Audi</li><li>Toyota</li><li>Citroën</li><li>Suzuki</li><li>Fiat</li><li>Alfa Romeo</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -82,6 +94,7 @@
     <section class="section cambio" id="cambio">
       <div class="wrap cambio__grid">
         <div class="cambio__intro">
+          <p class="eyebrow">Especialidade da casa</p>
           <h2>Câmbio automático avisa antes de quebrar</h2>
           <p class="lead">Um tranco aqui, uma demora ali. Parece pouco, mas costuma ser o começo. Marque o que o seu carro está fazendo e mande para a Meier com um toque.</p>
           <p class="note">Quanto antes o câmbio é avaliado, menor tende a ser o conserto.</p>
@@ -111,11 +124,13 @@
     <!-- Serviços -->
     <section class="section" id="servicos">
       <div class="wrap">
+        <p class="eyebrow">Mecânica completa</p>
         <h2>Do óleo ao câmbio, sem rodar a cidade</h2>
         <p class="lead">Revisão, conserto e diagnóstico no mesmo lugar. Você não precisa levar o carro em uma oficina para cada problema.</p>
 
         <div class="services">
           <div class="service">
+            <span class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.2" stroke-width="3" stroke-dasharray="2.6 2.55"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.6"/></svg></span>
             <h3>Motor e transmissão</h3>
             <ul>
               <li>Câmbio automático</li>
@@ -127,6 +142,7 @@
             </ul>
           </div>
           <div class="service">
+            <span class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M4.5 8.5A8.5 8.5 0 0 1 9 3.6" stroke-width="3.5"/></svg></span>
             <h3>Freios, suspensão e direção</h3>
             <ul>
               <li>Freios (ABS)</li>
@@ -136,6 +152,7 @@
             </ul>
           </div>
           <div class="service">
+            <span class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg></span>
             <h3>Elétrica e eletrônica</h3>
             <ul>
               <li>Scanner nacional e importado</li>
@@ -146,6 +163,7 @@
             </ul>
           </div>
           <div class="service">
+            <span class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.7 17.7 8.4a8 8 0 1 1-11.3 0Z"/></svg></span>
             <h3>Revisão e fluidos</h3>
             <ul>
               <li>Troca de óleo: motor, câmbio, diferencial</li>
@@ -155,6 +173,7 @@
             </ul>
           </div>
           <div class="service">
+            <span class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M3.3 7l17.4 10M3.3 17l17.4-10"/></svg></span>
             <h3>Conforto</h3>
             <ul>
               <li>Ar-condicionado (parcial)</li>
@@ -162,22 +181,20 @@
               <li>Acessórios</li>
             </ul>
           </div>
-        </div>
-
-        <aside class="used">
-          <div>
+          <aside class="service used">
+            <span class="service__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5.5 5.5"/></svg></span>
             <h3>Vai comprar um usado?</h3>
             <p>Traga o carro antes de fechar negócio. A avaliação técnica mostra o que o anúncio não conta.</p>
-          </div>
-          <a href="#" class="btn btn--ghost js-whats" data-msg="Olá! Quero agendar uma avaliação técnica de um carro antes de comprar." data-track="whats_avaliacao">Agendar avaliação</a>
-        </aside>
+            <a href="#" class="btn btn--light js-whats" data-msg="Olá! Quero agendar uma avaliação técnica de um carro antes de comprar." data-track="whats_avaliacao">Agendar avaliação</a>
+          </aside>
+        </div>
       </div>
     </section>
 
     <!-- Antigos -->
     <section class="section antigos" id="antigos">
       <div class="wrap antigos__inner">
-        <h2>Seu clássico merece mais que uma oficina qualquer</h2>
+        <h2>Seu <span class="script">clássico</span> merece mais que uma oficina qualquer</h2>
         <div>
           <p class="lead">Carro antigo pede paciência, a peça certa e a mão de quem conhece a mecânica da época. A Meier faz restauração mecânica e manutenção de antigos com o mesmo cuidado que você tem com ele.</p>
           <a href="#" class="btn btn--light js-whats" data-msg="Olá! Tenho um carro antigo e gostaria de conversar sobre restauração mecânica." data-track="whats_antigos">Contar sobre meu antigo</a>
@@ -205,6 +222,7 @@
     <!-- Como funciona -->
     <section class="section steps-sec">
       <div class="wrap">
+        <p class="eyebrow">Como funciona</p>
         <h2>Simples do começo ao fim</h2>
         <ol class="steps">
           <li><h3>Conte o problema</h3><p>Ligue ou mande WhatsApp dizendo o que o carro está fazendo.</p></li>
@@ -219,6 +237,7 @@
     <section class="section contato" id="contato">
       <div class="wrap contato__grid">
         <div>
+          <p class="eyebrow">Contato</p>
           <h2>Fale com a Meier hoje</h2>
           <p class="lead">Ligue, mande WhatsApp ou passe na oficina, no Bom Retiro.</p>
           <div class="contato__phones">
@@ -228,7 +247,7 @@
           <address class="contato__addr">Rua Frederico Schlemm, 58<br>Bom Retiro, Joinville/SC</address>
           <div class="ctas">
             <a href="#" class="btn btn--red js-whats" data-msg="Olá! Vim pelo site e gostaria de um orçamento." data-track="whats_contato"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2Z"/></svg>Chamar no WhatsApp</a>
-            <a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Frederico+Schlemm+58+Bom+Retiro+Joinville+SC" target="_blank" rel="noopener" class="btn btn--ghost" data-track="rota">Como chegar</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Frederico+Schlemm+58+Bom+Retiro+Joinville+SC" target="_blank" rel="noopener" class="btn btn--outline" data-track="rota">Como chegar</a>
           </div>
         </div>
         <div class="map">
