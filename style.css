@@ -322,3 +322,10 @@ p { margin: 0 0 1em; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* ===== Ícone do WhatsApp e números do contato ===== */
+.btn svg, .mobile-bar svg { width: 20px; height: 20px; fill: currentColor; flex: none; margin-right: .5rem; }
+.phone__label { display: block; font: 500 1rem/1.4 var(--font-body); color: var(--steel); }
+.phone--whats { display: flex; align-items: center; gap: .9rem; color: var(--ink); }
+.phone--whats svg { width: clamp(2.6rem, 6vw, 3.4rem); height: auto; fill: #1f8f4e; flex: none; }
+.phone--fixo { margin-top: 1rem; font-size: clamp(1.5rem, 3.5vw, 1.9rem); }
