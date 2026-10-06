@@ -84,22 +84,5 @@ document.querySelectorAll("[data-track]").forEach((el) => {
   el.addEventListener("click", () => track(el.dataset.track));
 });
 
-// ===== Animação de entrada =====
-const revealEls = document.querySelectorAll(".section h2, .service, .steps li, .checker, .about__quote, .antigos__inner > div");
-const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-if (!reduce && "IntersectionObserver" in window) {
-  revealEls.forEach((el) => el.classList.add("reveal"));
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-in");
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
-  revealEls.forEach((el) => io.observe(el));
-}
-
 // ===== Ano no rodapé =====
 document.getElementById("ano").textContent = new Date().getFullYear();
