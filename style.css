@@ -21,8 +21,8 @@
   --t-sm: .85rem;
   --t-md: 1.25rem;
   --t-lg: 1.56rem;
-  --t-xl: clamp(1.95rem, 3.6vw, 2.45rem);
-  --t-2xl: clamp(2.3rem, 5vw, 3.8rem);
+  --t-xl: clamp(1.6rem, 2.6vw, 2rem);
+  --t-2xl: clamp(1.95rem, 3.4vw, 2.6rem);
 
   --gutter: 16px;
   --max: 1160px;
@@ -42,9 +42,9 @@ body {
 }
 img, svg, iframe { display: block; max-width: 100%; }
 a { color: inherit; }
-h1, h2, h3 { font-family: var(--font-head); font-weight: 600; margin: 0 0 .5em; }
-h1 { font-size: var(--t-2xl); line-height: 1.02; letter-spacing: -.01em; }
-h2 { font-size: var(--t-xl); line-height: 1.08; max-width: 20ch; }
+h1, h2, h3 { font-family: var(--font-head); font-weight: 600; margin: 0 0 .5em; text-wrap: balance; }
+h1 { font-size: var(--t-2xl); line-height: 1.1; }
+h2 { font-size: var(--t-xl); line-height: 1.15; max-width: 30ch; }
 h3 { font-size: var(--t-md); line-height: 1.2; }
 p { margin: 0 0 1em; }
 
@@ -163,8 +163,8 @@ p { margin: 0 0 1em; }
   100% { transform: none; }
 }
 
-.hero__body { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(1.5rem, 4vw, 4rem); align-items: end; }
-.hero h1 { max-width: 15ch; margin: 0; }
+.hero__body { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 4rem); align-items: start; }
+.hero h1 { max-width: 22ch; margin: 0; }
 .hero__lead { font-size: 1.15rem; color: var(--steel); max-width: 46ch; margin-bottom: 1.5rem; }
 .hero__brands {
   margin: clamp(2.5rem, 5vw, 4rem) 0 0; padding-top: 1.25rem;
@@ -257,8 +257,8 @@ p { margin: 0 0 1em; }
 
 /* ===== Sobre ===== */
 .about__quote {
-  margin: 0 0 3rem; max-width: 20ch;
-  font: 600 var(--t-2xl)/1.05 var(--font-head);
+  margin: 0 0 2.5rem; max-width: 30ch;
+  font: 600 var(--t-xl)/1.2 var(--font-head); text-wrap: balance;
 }
 .about__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 4rem; max-width: 900px; }
 .about__cols p { color: var(--steel); }
@@ -322,3 +322,10 @@ p { margin: 0 0 1em; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* ===== Ícone do WhatsApp e números do contato ===== */
+.btn svg, .mobile-bar svg { width: 20px; height: 20px; fill: currentColor; flex: none; margin-right: .5rem; }
+.phone__label { display: block; font: 500 1rem/1.4 var(--font-body); color: var(--steel); }
+.phone--whats { display: flex; align-items: center; gap: .9rem; color: var(--ink); }
+.phone--whats svg { width: clamp(2.6rem, 6vw, 3.4rem); height: auto; fill: #1f8f4e; flex: none; }
+.phone--fixo { margin-top: 1rem; font-size: clamp(1.5rem, 3.5vw, 1.9rem); }
